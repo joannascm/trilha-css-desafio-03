@@ -8,36 +8,51 @@
     font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
     }
 
-    /*NAVEGADOR*/
+/*NAVEGADOR*/
 nav {
     display: flex;
     width: 100%;
     height: 56px;
     justify-content: space-between;
     background-color: #57575732;
-}
+    }
 
-#menu, #busca, #perfil, #icon-youtube, #perfil-pessoal, #icon-youtube img{
+
+    
+#menu, #busca, #perfil{
+    display: flex;
+    margin: 16px 24px;
     background-color: transparent;
 }
 
+button, #icon-youtube, #icon-youtube img{
+    background-color: transparent;
+}
+    
 #menu{
-    margin: 16px 24px;
+    width: 146px;
+    margin-top: 20px;
+    justify-content: space-around;
 }
-
-#icon-youtube img{
-    width: 90px;
-    height: auto;
-    margin-left: 32px;
-}
-
-#botao-menu, #publicacao, #notificacao, button img{
+    
+button img{
     width: 24px;
     height: auto;
     align-items: center;
     background-color: transparent;
 }
-
+    
+#icon-youtube img{
+    width: 90px;
+    height: auto;
+}
+    
+#busca{
+    width: 415px;
+    height: 37px;
+    margin: 10px 0 0 0;
+}
+    
 #busca input{
     width: 370px;
     height: 35px;
@@ -46,36 +61,26 @@ nav {
     padding: 0px 20px;
     color: white;
 }
-
-#busca button {
-    position: relative;
-    top: 5px;
-    left: -5px;
+    
+#busca button {   
     background-color: #3a3a3a;
     width: 45px;
     padding-right: 5px;
-    height: 36.2px;
+    height: 36px;
     border: 1px solid #575757;
     border-radius: 0px 40px 40px 0px;
 }
-
-#busca{
-    padding: 3px;
-}
-
+    
 #perfil {
-    display: flex;
     width: 150px;
     height: 34px;
     justify-content:space-around;
-    margin: 14px 24px;
 }
-
+    
 #perfil-pessoal img{
     width: 34px;
     height: auto;
 }
-
 /*MAIN*/
 
 main{
